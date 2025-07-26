@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fullscreen Image with Text</title>
+  <link href="/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+    <div class="nav-container main-container">
+      <div class="logo">
+        <a href="/index.html">P73</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="banner" style="background-image: url(/images/homepage/factory.png);">
+    <div class="homepage-banner-text-container main-container">
+      <div class="main-heading">
+        From Factory to Your Home
+      </div>
+      <p>Genuine stuff. Renovated with care.</p>
+    </div>
+  </div>
+
+  <!-- <div class="banner" style="background-image: url('images/main/ship.png');">
+    <div class="main-heading">
+      Wholesale
+    </div>
+    <div class="subtitle">
+      Ready to ship across the globe.
+    </div>
+  </div> -->
+
+  
+  <section class="product-categories" id="products">
+    <h2 class="section-header main-container">Our Products</h2>
+    <ul class="category-grid main-container">
+      
+      <li>
+        <a href="/categories/table/">
+          <div class="category-card">
+            <img src="/images/categories/thumbnails/table.png" alt="Tables">
+            <h2>Tables</h2>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/categories/chair/">
+          <div class="category-card">
+            <img src="/images/categories/thumbnails/chair.png" alt="Chairs">
+            <h2>Chairs</h2>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/categories/bed/">
+          <div class="category-card">
+            <img src="/images/categories/thumbnails/bed.png" alt="Beds">
+            <h2>Beds</h2>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/categories/decor/">
+          <div class="category-card">
+            <img src="/images/categories/thumbnails/decor.png" alt="Decor">
+            <h2>Decor</h2>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/categories/lighting/">
+          <div class="category-card">
+            <img src="/images/categories/thumbnails/lighting.png" alt="Lighting">
+            <h2>Lighting</h2>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/categories/outdoor/">
+          <div class="category-card">
+            <img src="/images/categories/thumbnails/outdoor.png" alt="Outdoor">
+            <h2>Outdoor</h2>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/categories/sofa/">
+          <div class="category-card">
+            <img src="/images/categories/thumbnails/sofa.png" alt="Sofas">
+            <h2>Sofas</h2>
+          </div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/categories/storage/">
+          <div class="category-card">
+            <img src="/images/categories/thumbnails/storage.png" alt="Storage">
+            <h2>Storage</h2>
+          </div>
+        </a>
+      </li>
+      
+    </ul>
+  </section>
+    
+
+  <section class="contact-section main-container" id="contact">
+    <h2 class="section-header">Get In Touch</h2>
+    <div class="contact-container">
+      <div class="contact-column">
+        <h3>Contact</h3>
+        <ul class="contact-list">
+          <li>Pavel Novak</li>
+          <li><a href="tel:+420123456789">+420 123 456 789</a></li>
+          <li><a href="mailto:pavel.novak@gmail.com">pavel.novak@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="contact-column">
+        <h3>Address</h3>
+        <ul class="contact-list">
+          <li>P73 Furniture</li>
+          <li>Example Street 123</li>
+          <li>110 00 Prague, Czech Republic</li>
+          <li>VAT ID: CZ12345678</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- scripts -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('.top-nav');
+      if (window.scrollY > 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
